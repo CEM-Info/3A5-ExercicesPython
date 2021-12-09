@@ -16,3 +16,6 @@
         12
 '''
 
+import random
+def lancer_dé(faces = 6):
+    return random.randint(1,faces)

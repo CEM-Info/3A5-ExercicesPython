@@ -12,3 +12,10 @@
         2020-11-30 11:04:59.108836   Un dé à 20 faces a été lancé; un 12 a été obtenu.
 '''
 
+import random
+import datetime
+def lancer_dé(faces = 6):
+    valeur = random.randint(1,faces)
+    open('lancers.txt', 'a').write(
+        f"{str(datetime.datetime.now())} : Un dé à {faces} faces a été lancé, et un {valeur} a été obtenu.\n")
+    return valeur

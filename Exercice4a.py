@@ -20,3 +20,7 @@
         3 x 12 = 36
 '''
 
+reponse = input("Entrez un nombre de 1 à 12: ")
+nombre = int(reponse)
+for i in range(1,13):
+    print(f"{nombre} x {i} = {nombre * i}")

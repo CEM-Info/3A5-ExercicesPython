@@ -8,3 +8,6 @@
         Brian
 '''
 
+import os
+def get_username():
+    return os.environ['USERNAME']

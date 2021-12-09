@@ -17,3 +17,21 @@
         Au revoir!
 '''
 
+while True:
+    reponse = input("Entrez un nombre de 1 à 12: ")
+
+    # Condition de sortie
+    if reponse == "":
+        print("Au revoir!")
+        exit()
+
+    # Évaluer le nombre
+    try:
+        nombre = int(reponse)
+        if (1 <= nombre <= 12):
+            break
+        print("Le nombre doit être compris entre 1 et 12!")
+    except:
+        print("Vous devez entrer un nombre!")
+for i in range(1,13):
+    print(f"{nombre} x {i} = {nombre * i}")

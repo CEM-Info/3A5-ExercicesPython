@@ -10,3 +10,7 @@
         #########################################
 '''
 
+def print_banner(message):
+    print("#" * (len(message) + 6))
+    print(f"## {message} ##")
+    print("#" * (len(message) + 6))

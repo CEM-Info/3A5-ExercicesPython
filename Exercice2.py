@@ -8,3 +8,6 @@
         ['Graham Chapman', 'John Cleese', 'Terry Gilliam', 'Eric Idle', 'Michael Palin']
 '''
 
+def lire_fichier(nomfichier):
+    with open(nomfichier, 'r') as fichier:
+        return [ligne.strip('\n') for ligne in fichier.readlines()]
